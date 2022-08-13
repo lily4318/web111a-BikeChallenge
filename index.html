@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required Responsive meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    crossorigin="anonymous">
+  <!-- jquery -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js' crossorigin='anonymous'></script>
+  <script>
+    $(function () {
+      $(window).scroll(function () {
+        let t = $(this).scrollTop()
+        // alert(t)
+        if (t > $(this).height() / 5) {
+          // alert(t)
+          $(".areaBg").addClass("ani")
+        } else {
+          $(".areaBg").removeClass("ani")
+        }
+      })
+    })
+  </script>
+  <title>哈雷機車</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-image: url('images/1.jpg');
+      background-position: center;
+      background-attachment: fixed;
+      background-size: cover;
+      /* background-repeat: no-repeat; */
+    }
+
+    @media (max-width: 768px) {
+      body {
+        background-position: left top;
+      }
+    }
+
+    @media (max-width: 575px) {
+      body {
+        background-position: right top;
+      }
+    }
+
+    @font-face {
+      src: url('fonts/Signatie.ttf');
+      font-family: w2;
+    }
+
+    @font-face {
+      src: url('fonts/Speedline.otf');
+      font-family: w3;
+    }
+
+    .logoWord {
+      font-family: w2;
+      text-shadow: 2px 2px 2px #333;
+      animation: showTitle 1s linear;
+    }
+
+    @keyframes showTitle {
+      from {
+        opacity: 0;
+        margin-top: 150px;
+      }
+
+      to {
+        opacity: 1;
+        margin-top: 0px;
+      }
+    }
+
+    .areaBg {
+      /* 背景透明色兩種寫法 */
+      /* background-color: rgba(0, 0, 0, 0.85); */
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    /* bootstrap5 官網說明：請注意，我們不為兩端對齊的文字 (justified text) 提供通用類別。雖然從美學上來講，兩端對齊的文字看起來更吸引人，但這也讓文字間距更加隨意，也因此更難閱讀。*/
+    .text-justify {
+      text-align: justify;
+    }
+
+    .sublogoWord {
+      font-family: w3;
+    }
+
+    .ani {
+      animation: ss 1s;
+    }
+
+    @keyframes ss {
+      from {
+        opacity: 0;
+        transform: scale(0, 0);
+      }
+
+      to {
+        opacity: 1;
+        transform: scale(1, 1);
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-dark">
+  <div class="container-fluid">
+    <div class="row vh-100">
+      <div class="col d-flex justify-content-center align-items-center">
+        <h1 class="text-center text-white display-3 logoWord">Passion Life</h1>
+      </div>
+    </div>
+    <div class="row vh-100 areaBg">
+      <div class="col-12 col-md-3 offset-md-2 d-flex justify-content-center align-items-center">
+        <div>
+          <h2 class="text-center text-danger m-3 sublogoWord h4">HARLEY DAVIDSON</h2>
+          <p class="text-justify my-3 text-white">
+            美國百年老廠哈雷公佈了高達13輛的2018年式新車，雖然車款幾乎都是原有名稱，但實際改變幅度可算是該廠有史來最大。其中有一輛引起了我們注意，它身上的LED方型頭燈、側出上揚雙尾管、前倒叉的外型也很可能會吸引那些"非哈雷族類"，所以我們要帶大家來仔細瞧瞧這台車，也就是今天的主角－2018
+            Softail Fat Bob。</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-5 text-white d-flex justify-content-center align-items-center">
+        <ul class="m-0 list-unstyled pt-3 ">
+          <li class="small border-bottom mt-2">引擎型式-OHV四汽門 空冷四行程 V型雙缸 (107)、OHV四汽門 水冷四行程 V型雙缸 (114)</li>
+          <li class="small border-bottom mt-2">排氣量-1,745 c.c. (107)、1,868 c.c (114)</li>
+          <li class="small border-bottom mt-2">缸徑 x 行程86 ｘ100mm (107)、102 x 110mm (114)</li>
+          <li class="small border-bottom mt-2">壓縮比-10.0 : 1 (107)、10.5 : 1 (114)</li>
+          <li class="small border-bottom mt-2">供油方式-電子燃油噴射</li>
+          <li class="small border-bottom mt-2">最大扭力-149 Nm / 3,000 rpm (107)、160 Nm/ 3,500 rpm (114)</li>
+          <li class="small border-bottom mt-2">前避震-SHOWA SDBV 43mm 倒叉</li>
+          <li class="small border-bottom mt-2">前傾角-28°, 拖曳距132mm</li>
+          <li class="small border-bottom mt-2">後避震-單體避震，旋鈕式五段預載可調</li>
+          <li class="small border-bottom mt-2">前制動-對向四活塞卡鉗</li>
+          <li class="small border-bottom mt-2">後制動-對向二活塞卡鉗</li>
+          <li class="small border-bottom mt-2">前輪-150/80-16</li>
+          <li class="small border-bottom mt-2">後輪-180/70-16</li>
+          <li class="small border-bottom mt-2">傳動-六前速鍊條傳動</li>
+          <li class="small border-bottom mt-2">車身傾角-左 32°/ 右31°</li>
+          <li class="small border-bottom mt-2">座高-710mm</li>
+          <li class="small border-bottom mt-2">軸距-1,615 mm</li>
+          <li class="small border-bottom mt-2">油箱容量-13.6 L</li>
+          <li class="small border-bottom mt-2">裝備車重-305kg (107)、306kg (114)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col p-0">
+        <div class="ratio ratio-16x9">
+          <video src="media/film.mp4" autoplay="true" muted="true"></video>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <!-- Optional JavaScript use dropdowns, popovers, or tooltips need -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
